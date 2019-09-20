@@ -1,10 +1,10 @@
-package com.gimaletdinova.rest.client;
+package com.bank.rest.client;
 
-import com.gimaletdinova.rest.dto.TopUpDto;
-import com.gimaletdinova.rest.dto.TransferMoneyDto;
-import com.gimaletdinova.rest.exception.ApiWebException;
-import com.gimaletdinova.rest.model.Account;
-import com.gimaletdinova.rest.service.AccountService;
+import com.bank.rest.dto.TopUpDto;
+import com.bank.rest.dto.TransferMoneyDto;
+import com.bank.rest.exception.ApiWebException;
+import com.bank.rest.model.Account;
+import com.bank.rest.service.AccountService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

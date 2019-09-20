@@ -1,13 +1,10 @@
-package com.gimaletdinova.rest.dto;
+package com.bank.rest.dto;
 
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 import java.math.BigDecimal;
 
-/**
- * Created by agimaletdinova on 14.09.2019.
- */
 public class TransferMoneyDto {
 
     Long accountNumberFrom;

@@ -1,8 +1,5 @@
-package com.gimaletdinova.rest.exception;
+package com.bank.rest.exception;
 
-/**
- * Created by agimaletdinova on 14.09.2019.
- */
 public class ApiException extends RuntimeException {
 
     private String message;

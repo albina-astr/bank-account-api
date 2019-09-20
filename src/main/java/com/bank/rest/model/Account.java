@@ -1,15 +1,12 @@
-package com.gimaletdinova.rest.model;
+package com.bank.rest.model;
 
-import com.gimaletdinova.rest.exception.ApiException;
+import com.bank.rest.exception.ApiException;
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 import java.math.BigDecimal;
 
-/**
- * Created by agimaletdinova on 14.09.2019.
- */
 @JsonIgnoreProperties({"lock"})
 public class Account {
 

@@ -1,4 +1,4 @@
-package com.gimaletdinova.rest;
+package com.bank.rest;
 
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
@@ -23,7 +23,7 @@ public class Application {
     }
 
     private static HttpServer createHttpServer() throws IOException {
-        ResourceConfig resourceConfig = new PackagesResourceConfig("com.gimaletdinova.rest");
+        ResourceConfig resourceConfig = new PackagesResourceConfig("com.bank.rest");
         resourceConfig.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING,Boolean.TRUE);
 
         return HttpServerFactory.create(getURI(), resourceConfig);

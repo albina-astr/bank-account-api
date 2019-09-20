@@ -1,6 +1,6 @@
-package com.gimaletdinova.rest.repo;
+package com.bank.rest.repo;
 
-import com.gimaletdinova.rest.model.Account;
+import com.bank.rest.model.Account;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

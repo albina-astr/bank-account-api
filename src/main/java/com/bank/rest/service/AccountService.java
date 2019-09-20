@@ -1,8 +1,8 @@
-package com.gimaletdinova.rest.service;
+package com.bank.rest.service;
 
-import com.gimaletdinova.rest.exception.ApiException;
-import com.gimaletdinova.rest.model.Account;
-import com.gimaletdinova.rest.repo.AccountRepository;
+import com.bank.rest.exception.ApiException;
+import com.bank.rest.model.Account;
+import com.bank.rest.repo.AccountRepository;
 import org.apache.commons.lang3.RandomUtils;
 
 import java.math.BigDecimal;
@@ -13,8 +13,6 @@ import static java.util.Objects.isNull;
 
 /**
  * Service for account operations.
- * <p>
- * Created by agimaletdinova on 14.09.2019.
  */
 public class AccountService {
 

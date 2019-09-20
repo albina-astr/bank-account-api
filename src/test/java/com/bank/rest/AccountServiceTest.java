@@ -1,9 +1,9 @@
-package com.gimaletdinova.rest;
+package com.bank.rest;
 
-import com.gimaletdinova.rest.exception.ApiException;
-import com.gimaletdinova.rest.model.Account;
-import com.gimaletdinova.rest.repo.AccountRepository;
-import com.gimaletdinova.rest.service.AccountService;
+import com.bank.rest.exception.ApiException;
+import com.bank.rest.model.Account;
+import com.bank.rest.repo.AccountRepository;
+import com.bank.rest.service.AccountService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,9 +13,6 @@ import java.util.List;
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * Created by agimaletdinova on 14.09.2019.
- */
 public class AccountServiceTest {
 
     private AccountService accountService = AccountService.getSingleInstance();

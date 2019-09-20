@@ -1,8 +1,8 @@
-package com.gimaletdinova.rest;
+package com.bank.rest;
 
-import com.gimaletdinova.rest.dto.TopUpDto;
-import com.gimaletdinova.rest.dto.TransferMoneyDto;
-import com.gimaletdinova.rest.model.Account;
+import com.bank.rest.dto.TopUpDto;
+import com.bank.rest.dto.TransferMoneyDto;
+import com.bank.rest.model.Account;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -386,7 +386,7 @@ public class ApiClientTest {
 
 
     private HttpServer createHttpServer() throws IOException {
-        ResourceConfig resourceConfig = new PackagesResourceConfig("com.gimaletdinova.rest");
+        ResourceConfig resourceConfig = new PackagesResourceConfig("com.bank.rest");
         resourceConfig.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING, Boolean.TRUE);
 
         return HttpServerFactory.create(getURI(), resourceConfig);

@@ -1,4 +1,4 @@
-package com.gimaletdinova.rest.exception;
+package com.bank.rest.exception;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;

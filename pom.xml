@@ -78,7 +78,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.gimaletdinova.rest.Application</mainClass>
+                    <mainClass>com.bank.rest.Application</mainClass>
                 </configuration>
             </plugin>
         </plugins>
