@@ -1,4 +1,5 @@
 Bank account RESTful API
+------------------------
 Provides methods to work with bank account: CRUD operations, transfer money between 2 accounts
 
 Stack:
