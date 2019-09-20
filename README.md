@@ -5,9 +5,8 @@ Stack:
 - Java 8
 - JUnit 5
 - Jersey 1.8
-
-No authorization
-No DB, all data runs in-memory
+- No authorization
+- No DB, all data runs in-memory
 
 
 METHODS DESCRIPTION
@@ -34,13 +33,15 @@ Status 200
 Updates existing account
 Parameter type: body
 Parameter content type: JSON
+
 Parameter model schema:
-{
+`{
     "number": 0,
     "owner": "string",
     "balance": 0,
     "disabled": "false"
-}
+}`
+
 Response Content Type: JSON
 Status 200
 
@@ -49,10 +50,10 @@ Adds money to account by its number
 Parameter type: body
 Parameter content type: JSON
 Parameter model schema:
-{
+`{
     "accountNumber": 0,
     "amount": 0
-}
+}`
 Status 204
 
 6. DELETE /delete/{accountNumber}
@@ -64,9 +65,9 @@ Transfers money between 2 accounts
 Parameter type: body
 Parameter content type: JSON
 Parameter model schema:
-{
+`{
     "accountNumberFrom": 0,
     "accountNumberTo": 0,
     "amount": 0
-}
+}`
 Status 204
