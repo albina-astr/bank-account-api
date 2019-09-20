@@ -14,27 +14,30 @@ METHODS DESCRIPTION
 Resource path: /accounts
 ------------------------
 
-1. POST /create/{owner}
-Creates new account
-Response Content Type: JSON
-Status 200
+>1. POST /create/{owner}
+- Creates new account
+- Response Content Type: JSON
+- Status 200
 
-2. GET
-Returns all accounts
-Response Content Type: JSON
-Status 200
+>2. GET
 
-3. GET /{accountNumber}
-Finds account by its number
-Response Content Type: JSON
-Status 200
+- Returns all accounts
+- Response Content Type: JSON
+- Status 200
 
-4. PUT /update
-Updates existing account
-Parameter type: body
-Parameter content type: JSON
+>3. GET /{accountNumber}
 
-Parameter model schema:
+- Finds account by its number
+- Response Content Type: JSON
+- Status 200
+
+>4. PUT /update
+
+- Updates existing account
+- Parameter type: body
+- Parameter content type: JSON
+
+- Parameter model schema:
 `{
     "number": 0,
     "owner": "string",
@@ -42,32 +45,35 @@ Parameter model schema:
     "disabled": "false"
 }`
 
-Response Content Type: JSON
-Status 200
+- Response Content Type: JSON
+- Status 200
 
-5. POST /top_up
-Adds money to account by its number
-Parameter type: body
-Parameter content type: JSON
-Parameter model schema:
+>5. POST /top_up
+
+- Adds money to account by its number
+- Parameter type: body
+- Parameter content type: JSON
+- Parameter model schema:
 `{
     "accountNumber": 0,
     "amount": 0
 }`
-Status 204
+- Status 204
 
-6. DELETE /delete/{accountNumber}
-Deletes account by its number
-Status 204
+>6. DELETE /delete/{accountNumber}
 
-7. POST /transfer
-Transfers money between 2 accounts
-Parameter type: body
-Parameter content type: JSON
-Parameter model schema:
+- Deletes account by its number
+- Status 204
+
+>7. POST /transfer
+
+- Transfers money between 2 accounts
+- Parameter type: body
+- Parameter content type: JSON
+- Parameter model schema:
 `{
     "accountNumberFrom": 0,
     "accountNumberTo": 0,
     "amount": 0
 }`
-Status 204
+- Status 204
